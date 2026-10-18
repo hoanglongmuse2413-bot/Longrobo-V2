@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LONGROBO-V2 - Robot cua Long"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="12dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BAT che do chay nen (tat man hinh van chay)" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Am bao ting ting sau khi tra loi"
+        android:checked="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnPerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Bat 2 quyen: Nhin man hinh + Doc thong bao"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhat ky chat:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#222"
+        android:layout_marginTop="4dp">
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00FF00"
+            android:padding="8dp"
+            android:text="..." />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhap tin nhan thu..." />
+        <Button android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gui" />
+        <Button android:id="@+id/btnMic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎤" />
+    </LinearLayout>
+</LinearLayout>
